@@ -2,30 +2,29 @@
 
 <head>
   <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <script src="script.js"></script>
 </head>
 
 <body>
-    <div class="player">
-        <img class="cover" src="cover-1.png" alt="cover1">
-        <h1>Lost in the City Lights</h1>
-        <h2>Cosmo Sheldrake</h2>
-        <div id="time">
-        <p class="timer" id="current-time">0:00</p>
-        <p class="timer" id="total-time">8:88</p>
-       </div>
-        <div id="progress-bar-container">
-        <div id="progress-bar"></div>
-        </div>
-        <div class="button">
-           <button id="previous" onclick="previousAudio()"></button>
-            <button id="play" onclick="playStopAudio()"></button>
-            <button id="next" onclick="nextAudio()"></button>
-        </div>
+  <audio id="audio" src="lost-in-city-lights-145038.mp3" control></audio>
 
+  <div class="controls">
+    <img class="cover" id="cover" src="cover-1.png" alt="cover1" />
+    <h1 id = "songName">Lost in the City Lights</h1>
+    <h2 id = "artistName">Cosmo Sheldrake</h2>
+    <div id="time">
+      <p class="timer" id="songCurrentDuration">0:00</p>
+      <p class="timer" id="songDuration">8:88</p>
     </div>
-    <div id="audio-player" src="lost-in-city-lights-145038.mp3"></div>
+    <div id="progress-bar-container">
+      <div id="progress-bar"></div>
+    </div>
+    <div class="button">
+      <button id="previous" onclick="previousAudio()"></button>
+      <button id="play" onclick="playStopAudio()"></button>
+      <button id="next" onclick="nextAudio()"></button>
+    </div>
+  </div>
 </body>
