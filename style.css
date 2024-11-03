@@ -4,7 +4,7 @@ body{
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: repeat(6,1fr);
     }
-.player{
+.controls{
     background-color: #212936;
     grid-column: 4/6;
     grid-row: 2/6;
