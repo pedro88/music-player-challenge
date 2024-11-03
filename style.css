@@ -72,10 +72,10 @@ button:active{
     margin-top: 3px;
     position: relative;
 }
-#progress-bar {
-    background-color:#C93B76;
+#progressBar {
+    background:#C93B76;
     height: 100%;
-    width: 0;
+    width: 100%;
 
 }
 #time{
